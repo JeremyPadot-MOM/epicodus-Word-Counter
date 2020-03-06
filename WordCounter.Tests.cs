@@ -37,7 +37,7 @@ namespace Counter.Tests
     {
       //arrange
       string userWord = "cat";
-      string userSentence = "Today I'm taking my cat to the cathedral to meet another cat";
+      string userSentence = "Today I'm taking my cat to the cathedral";
       UserInput newUserInput = new UserInput(userWord, userSentence);
       //act
       int score = newUserInput.GetScore();
