@@ -22,9 +22,12 @@ namespace Counter.Models
       int wordScore = 0;
       for(int i = 0; i < splitString.Length; i++)
       {
-        if (UserWord.Contains(splitString[i]))
+        foreach(string userWord in splitString)
         {
-          wordScore += 1;
+          if (UserWord.Contains(splitString[i]))
+          {
+            wordScore += 1;
+          }
         }
       }
       return wordScore;
