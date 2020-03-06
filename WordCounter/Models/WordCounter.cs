@@ -3,11 +3,13 @@ using System.Collections.Generic;
 
 namespace Counter.Models
 {
-  public class Word
+  public class UserInput
   {
     public string UserWord {get; set;}
-    public List<string> UserSentence = new List<string> {};
-    public void UserInput(string userWord, List<string> userSentence)
+    public string UserSentence {get; set;}
+    // public List<string> UserSentence = new List<string> {};
+    // public void UserInput(string userWord, List<string> userSentence)
+    public UserInput(string userWord, string UserSentence)
     {
       UserWord = userWord;
       UserSentence = userSentence;
