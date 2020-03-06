@@ -28,5 +28,19 @@ namespace Counter.Models
       }
       return wordScore;
     }
+      public string CheckInput()
+    {
+      char[] checkWord = UserWord.ToCharArray();
+      for (int i = 0; i < checkWord.Length; i++)
+      {
+        bool correct = Char.IsLetter(checkWord[i]);
+        if (correct == false)
+        {
+          throw new System.ArgumentException("Input word must only contain letters please", "original");
+          break;
+        }
+      }
+      return UserWord;
+    }
   }
 }
