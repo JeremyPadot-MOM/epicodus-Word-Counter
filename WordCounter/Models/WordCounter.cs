@@ -9,10 +9,10 @@ namespace Counter.Models
     public string UserSentence {get; set;}
     // public List<string> UserSentence = new List<string> {};
     // public void UserInput(string userWord, List<string> userSentence)
-    public UserInput(string userWord, string UserSentence)
+    public UserInput(string userWord, string userSentence)
     {
       UserWord = userWord;
-      // UserSentence = userSentence;
+      UserSentence = userSentence;
     }
   }
   public class RepeatCounter
