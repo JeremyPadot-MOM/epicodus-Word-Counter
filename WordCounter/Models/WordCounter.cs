@@ -13,13 +13,21 @@ namespace Counter.Models
       UserWord = userWord;
       UserSentence = userSentence;
     }
-  }
-  public class RepeatCounter
-  {
+  
+  // public class RepeatCounter
+  // {
     public int GetScore()
     {
-      int score = 0;
-      return score;
+      string[] splitString = UserSentence.Split();
+      int wordScore = 0;
+      for(int i = 0; i < splitString.Length; i++)
+      {
+        if (splitString.Contains(userWord))
+        {
+          wordScore += 1;
+        }
+      }
+      return wordScore;
     }
   }
 }
