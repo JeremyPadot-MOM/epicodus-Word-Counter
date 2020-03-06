@@ -25,12 +25,12 @@ namespace Counter.Tests
     {
       // arrange
       string userWord = "cat";
-      string userSentence = "Today I need to buy cat food for my cat so my cat can eat something";
+      string userSentence = "cat";
       UserInput newUserInput = new UserInput(userWord, userSentence);
       // act
       int wordScore = newUserInput.GetScore();
       // assert
-      Assert.AreEqual(3, wordScore);
+      Assert.AreEqual(1, wordScore);
     }
   }
 }
