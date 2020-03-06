@@ -24,10 +24,14 @@ namespace Counter.Models
       {
         // foreach(string userWord in splitString)
         // {
-          if (splitString[i].Contains(UserWord))
+          if (splitString[i]==(UserWord))
           {
             wordScore +=1;
           }
+          // if(splitString[i] > Userword.Length)
+          // {
+          //   wordScore -=1;
+          // }
         // }
       }
       return wordScore;
