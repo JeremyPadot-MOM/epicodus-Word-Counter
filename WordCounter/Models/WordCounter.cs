@@ -18,11 +18,11 @@ namespace Counter.Models
   // {
     public int GetScore()
     {
-      string[] splitString = UserSentence.Split();
+      string[] splitString = UserSentence.Split("");
       int wordScore = 0;
       for(int i = 0; i < splitString.Length; i++)
       {
-        if (splitString.Contains(userWord))
+        if (UserWord.Contains(splitString[i]))
         {
           wordScore += 1;
         }
