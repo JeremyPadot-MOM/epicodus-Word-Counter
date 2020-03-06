@@ -30,6 +30,18 @@ namespace Counter.Tests
       // act
       int score = newUserInput.GetScore();
       // assert
+      Assert.AreEqual(3, score);
+    }
+    [TestMethod]
+    public void GetWordScore_ExcludeCompoundWords_Int()
+    {
+      //arrange
+      string userWord = "cat";
+      string userSentence = "Today I'm taking my cat to the cathedral";
+      UserInput newUserInput = new UserInput(userWord, userSentence);
+      //act
+      int score = newUserInput.GetScore();
+      //assert
       Assert.AreEqual(1, score);
     }
   }
