@@ -56,7 +56,7 @@ namespace Counter.Tests
     //act
     int score = newUserInput.GetScore();
     //assert
-    Assert.AreEqual(2, score);
+    Assert.AreEqual(1, score);
     }
   }
 }
