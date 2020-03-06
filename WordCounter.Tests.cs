@@ -21,7 +21,7 @@ namespace Counter.Tests
       Assert.AreEqual(typeof(UserInput), newUserInput.GetType());
     }
     [TestMethod]
-    public void GetWordScore_CalculateWordScore_Int()
+    public void GetScore_CalculateWordScore_Int()
     {
       // arrange
       string userWord = "cat";
@@ -33,7 +33,7 @@ namespace Counter.Tests
       Assert.AreEqual(3, score);
     }
     [TestMethod]
-    public void GetWordScore_ExcludeWordsWithSameCharacters_Int()
+    public void GetScore_ExcludeWordsWithSameCharacters_Int()
     {
       //arrange
       string userWord = "cat";
@@ -45,10 +45,8 @@ namespace Counter.Tests
       Assert.AreEqual(1, score);
     }
     [TestMethod]
-    public void GerWordScore_CalculateWordScore_Int()
+    public void GetWordScore_CalculateWordScore_Int()
     {
-
-    
     //arrange
     string userWord = "dog";
     string userSentence = "I'd like to take my dog to the dogpark to meet other dogs";
@@ -57,6 +55,18 @@ namespace Counter.Tests
     int score = newUserInput.GetScore();
     //assert
     Assert.AreEqual(1, score);
+    }
+    [TestMethod]
+    public void GetScore_GetErrorMessage_Int()
+    {
+      //arrange
+      string userWord ="";
+      string userSentence = "";
+      Userinput newUserInput = new UserInput(userWord, userSentence);
+      //act
+      int score = newUserInput.GetScore();
+      //arrange
+      Assert.AreEqual();
     }
   }
 }
