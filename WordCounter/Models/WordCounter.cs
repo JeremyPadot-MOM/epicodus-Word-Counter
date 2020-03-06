@@ -7,8 +7,7 @@ namespace Counter.Models
   {
     public string UserWord {get; set;}
     public string UserSentence {get; set;}
-    // public List<string> UserSentence = new List<string> {};
-    // public void UserInput(string userWord, List<string> userSentence)
+    
     public UserInput(string userWord, string userSentence)
     {
       UserWord = userWord;
