@@ -20,16 +20,17 @@ namespace Counter.Tests
       // assert
       Assert.AreEqual(typeof(UserInput), newUserInput.GetType());
     }
-    // [TestMethod]
-    // public void GetWordScore_CalculateWordScore_Int()
-    // {
-    //   // arrange
-    //   string userWord = "cat";
-    //   string userSentence = ""
-    //   // act
-
-    //   // assert
-
-    // }
+    [TestMethod]
+    public void GetWordScore_CalculateWordScore_Int()
+    {
+      // arrange
+      string userWord = "cat";
+      string userSentence = "Today I need to buy cat food for my cat so my cat can eat something";
+      UserInput newUserInput = new UserInput(userWord, userSentence);
+      // act
+      int wordScore = newUserInput.GetScore();
+      // assert
+      Assert.AreEqual(3, wordScore);
+    }
   }
 }
