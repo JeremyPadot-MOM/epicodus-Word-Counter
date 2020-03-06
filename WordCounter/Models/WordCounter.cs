@@ -12,8 +12,7 @@ namespace Counter.Models
     public UserInput(string userWord, string UserSentence)
     {
       UserWord = userWord;
-      UserSentence = userSentence;
-      
+      // UserSentence = userSentence;
     }
   }
   public class RepeatCounter
