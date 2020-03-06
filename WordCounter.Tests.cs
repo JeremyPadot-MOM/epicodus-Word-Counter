@@ -14,13 +14,22 @@ namespace Counter.Tests
     {
       // arrange
       string userWord = "cat";
-      string userSentence = "cat cat cat";
+      string userSentence = "Today I need to buy cat food for my cat so my cat can eat something";
       UserInput newUserInput = new UserInput(userWord, userSentence);
-      // List<string> list1 = new List<string> {"I love my cat"};
-      // UserInput newUserInput = new UserInput(string1, list1);
       // act
       // assert
-      Assert.AreEqual(userWord, userSentence);
+      Assert.AreEqual(typeof(UserInput), newUserInput.GetType());
     }
+    // [TestMethod]
+    // public void GetWordScore_CalculateWordScore_Int()
+    // {
+    //   // arrange
+    //   string userWord = "cat";
+    //   string userSentence = ""
+    //   // act
+
+    //   // assert
+
+    // }
   }
 }
