@@ -16,7 +16,7 @@ _A program that will gather both a word and sentence from a user, then checks ho
 | Behavior | Input | Output |
 |:---|:---:|:---:|
 | User inputs two strings: a word, and a sentence| "cat", "Today I need to buy cat food for my cat so my cat can eat something" | creates new instance of user input |
-| If user fails to include word, application will return an error | "", "Today I need to buy cat food for my cat so my cat can eat something"| error |
+| If user fails to include word, application will return an error | "", "Today I need to buy cat food for my cat so my cat can eat something"| error, you must include a word to be searched |
 | If user inputs two strings: a word, and a sentence| "cat", "Today I need to buy cat food for my cat so my cat can eat something" | 3 |
 
 ## Setup/Installation Requirements
