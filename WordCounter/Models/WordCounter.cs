@@ -15,24 +15,16 @@ namespace Counter.Models
     }
   
   // public class RepeatCounter
-  // {
     public int GetScore()
     {
       string[] splitString = UserSentence.Split();
       int wordScore = 0;
       for(int i = 0; i < splitString.Length; i++)
       {
-        // foreach(string userWord in splitString)
-        // {
-          if (splitString[i]==(UserWord))
-          {
-            wordScore +=1;
-          }
-          // if(splitString[i] > Userword.Length)
-          // {
-          //   wordScore -=1;
-          // }
-        // }
+        if (splitString[i]==(UserWord))
+        {
+          wordScore +=1;
+        }
       }
       return wordScore;
     }
