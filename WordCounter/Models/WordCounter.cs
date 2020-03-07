@@ -14,7 +14,6 @@ namespace Counter.Models
       UserSentence = userSentence;
     }
   
-  // public class RepeatCounter
     public int GetScore()
     {
       int wordScore = 0;
@@ -32,18 +31,4 @@ namespace Counter.Models
   }
 }
 
-    //   public string CheckInput()
-    // {
-    //   char[] checkWord = UserWord.ToCharArray();
-    //   for (int i = 0; i < checkWord.Length; i++)
-    //   {
-    //     bool correct = Char.IsLetter(checkWord[i]);
-    //     if (correct == false)
-    //     {
-    //       throw new System.ArgumentException("Input word must only contain letters please", "original");
-    //       break;
-    //     }
-    //   }
-    //   return UserWord;
-    // }
   
