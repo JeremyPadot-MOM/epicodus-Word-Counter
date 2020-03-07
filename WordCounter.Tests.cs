@@ -56,17 +56,17 @@ namespace Counter.Tests
     //assert
     Assert.AreEqual(1, score);
     }
-    [TestMethod]
-    public void GetScore_GetErrorMessage_Int()
-    {
-      //arrange
-      string userWord ="";
-      string userSentence = "";
-      Userinput newUserInput = new UserInput(userWord, userSentence);
-      //act
-      int score = newUserInput.GetScore();
-      //arrange
-      Assert.AreEqual();
-    }
+    // [TestMethod]
+    // public void GetScore_GetErrorMessage_Int()
+    // {
+    //   //arrange
+    //   string userWord ="";
+    //   string userSentence = "";
+    //   Userinput newUserInput = new UserInput(userWord, userSentence);
+    //   //act
+    //   int score = newUserInput.GetScore();
+    //   //arrange
+    //   Assert.AreEqual();
+    // }
   }
 }
